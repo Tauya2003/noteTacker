@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>NOTE TAKER</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <h1>Note Tacker</h1>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Input Section Start -->
+    <section class="noteInput">
+        <div class="container">
+            <h2>Add A New Note</h2>
+            <textarea name="note" id="note" placeholder="Start typing..."></textarea>
+            <br>
+            <p class="error animate__animated animate__shakeX ">Please type in some notes!</p>
+            <button class="addBtn">Add Note</button>
+        </div>
+    </section>
+    <!-- Input Section End -->
+
+    <!-- Display Section Start -->
+    <section class="display-notes">
+        <div class="container">
+            <p class="noNotes animate__animated animate__pulse">No notes added yet!</p>
+
+            <div class="grid">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Recusandae eaque vero natus reprehenderit neque dolor
+                          sequi quae inventore aperiam ea!</p>
+                    <button class="view-details">View Details</button>
+                    <button class="delete">X</button>
+                </div>
+
+                <div class="item">
+                    <p>These are my notes</p>
+                    <button class="view-details">View Details</button>
+                    <button class="delete">X</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Display Section End -->
+
+    <!-- Overlay Start -->
+    <section id="overlay">
+        <!-- <div class="overlay">
+            <div class="fullNotes">
+                <button class="closeBtn">X</button>
+            </div>
+        </div> -->
+    </section>
+    <!-- Overlay End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <p>2023 &COPY; auyat2003</p>
+    </footer>
+    <!-- Footer Section End -->
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

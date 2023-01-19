@@ -1,0 +1,185 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6fb98f;
+}
+
+.error{
+  color: #E81123;
+  font-family: monospace;
+  display: none;
+}
+
+.noNotes{
+  display: none;
+  color: #004445;
+  animation-iteration-count: infinite;
+}
+
+.header{
+  background-color: #004445;
+  padding: 25px 0;
+  text-align: center;
+  text-justify: center;
+  border-bottom: 1px solid #111;
+  color: #eee;
+}
+
+.header h1{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container{
+  margin: 25px auto;
+  text-align: center;
+  max-width: 485px;
+}
+
+.noteInput h2{
+  padding-bottom: 20px;
+  color: #004445;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.noteInput textarea{
+  background-color: #00000041;
+  padding: 14px;
+  height: 100px;
+  width: 400px;
+  border-radius: 5px;
+  border-color: #021C1E;
+  box-shadow: 2px 7px 20px #021C1E;
+  font-size: 15px;
+  color: #fff;
+}
+
+.noteInput textarea::placeholder{
+  color: #999
+}
+
+.noteInput textarea:focus{
+  outline: 1px solid #6fb98f;
+}
+
+.noteInput .addBtn{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  box-shadow: 2px 7px 20px #021C1E;
+  background-color: #021C1E;
+  color: #fff;
+}
+
+.noteInput .addBtn:hover{
+  border: 1px solid #6fb98f;
+  background-color: #021c1eea;
+}
+
+.noteInput .addBtn:active{
+  background-color: #021c1eb9;
+}
+
+.display-notes .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.display-notes .item{
+  color: #fff;
+  padding: 15px 10px;
+  height: 100px;
+  background-color: #00444563;
+  border-radius: 5px;
+  box-shadow: 2px 6px 10px #004445;
+}
+
+.display-notes .item p{
+  text-align: left;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#ddd;
+  font-size: 14px;
+}
+
+.display-notes .item button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  box-shadow: 2px 7px 20px #021C1E;
+  background-color: #004445;
+  color: #fff;
+}
+
+.display-notes .item .delete{
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.display-notes .item .delete:hover{
+  border: 1px solid #6fb98f;
+  background-color: #E81123ea;
+}
+
+.display-notes .item .delete:active{
+  background-color: #E81123b9;
+}
+
+.display-notes .item .view-details:hover{
+  border: 1px solid #6fb98f;
+  background-color: #004445ea;
+}
+
+.display-notes .item .view-details:active{
+  background-color: #004445b9;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #0000005a;
+}
+
+.overlay .fullNotes{
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 75vh;
+  overflow: scroll;
+}
+
+.overlay .fullNotes .closeBtn{
+  background-color: transparent;
+  border: 0;
+  color: #aaa;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 3px #11111127;
+}
