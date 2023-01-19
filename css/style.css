@@ -183,3 +183,20 @@ body{
   text-align: center;
   text-shadow: 2px 3px #11111127;
 }
+
+@media (max-width: 425px) {
+
+  .display-notes .grid{
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  
+  .display-notes .item p{
+    width: 90vw;
+  }
+
+  .noteInput textarea{
+    width: 90vw;
+  }
+}
+
