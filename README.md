@@ -1,2 +1,2 @@
-# noteTacker
-A simple note tacking app
+# noteTaker
+A simple note taking app
